@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0750B1C363EE2C96D0F830095C0A152E /* XMGesturePasswordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F581B8237D594F90053EB8D2FEA99D9C /* XMGesturePasswordCell.m */; };
+		3C91CBDBBB3E3C13FBA5319BD4F4523C /* Pods-XMGesturePassword_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F641142402F3E8DA8C7A6E3CDB18CF25 /* Pods-XMGesturePassword_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		47BA926ECAE3B1D7C92EA6A9E3623637 /* XMGesturePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3074CEEDE484B95226AE1149B4835B2 /* XMGesturePasswordView.m */; };
+		6CD3B4897A4ABF974679D481935E696E /* Pods-XMGesturePassword_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B58922B1B70C3FD6E19A83D7A46A7863 /* Pods-XMGesturePassword_Tests-dummy.m */; };
+		7D8D25346C8FD7884A06A092DFB80B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		87B5EC347D6CB2227C1BEF8232575267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A062DE8B30EAE88D078E5BE1D5F09626 /* XMGestureBezierPlotter.m in Sources */ = {isa = PBXBuildFile; fileRef = C052A35E24C0D40C3B0EBEC9B6D8C649 /* XMGestureBezierPlotter.m */; };
+		A2145E947C43C01348BD0A640B353265 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AB723662A596050A9D7E9745C9D2FCCE /* XMGestureBezierPlotter.h in Headers */ = {isa = PBXBuildFile; fileRef = C9AE43524BFDC489A7C378328D0169AC /* XMGestureBezierPlotter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC7F14E90E97A420A892E5E7F3207084 /* XMGesturePassword-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 340EF9B4998A4958B5CC09FAA9774676 /* XMGesturePassword-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1B61ADA88F6B2BC1307529D6549C18A /* XMGesturePasswordView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27504A6763EF33A773491E5493BD800B /* XMGesturePasswordView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4AECB7ADD213ECC658A0C887BEC4106 /* XMGesturePassword-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D4962F5247362CE478F927AB03AA4B /* XMGesturePassword-dummy.m */; };
+		BBCC27A3FA241FD6632BAAAFFE2AA967 /* XMGesturePasswordCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 842358167ECC62780093B282992A83A6 /* XMGesturePasswordCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C865DEF98D5B695DBA96B38631D5F048 /* XMGestureBezierCurveProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 188443A9337BA45E77B1CBC63F70DBC4 /* XMGestureBezierCurveProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6685F34AA819A69395DFC29E3B26701 /* Pods-XMGesturePassword_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B90C9939AA2431F2D6C5C02F487319 /* Pods-XMGesturePassword_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FFADF4CACA886B5DADFE8FA76E9681A1 /* Pods-XMGesturePassword_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D2172005D39C7E67C852933E39F976 /* Pods-XMGesturePassword_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		11A7ACE89F6D4C81AE2E249B9AAB8425 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 996893661F28E1E0B9FCC85CCAFD9082;
+			remoteInfo = XMGesturePassword;
+		};
+		5EEF86D8C96FD01E5152F3F47469BE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A2E4D6C066E07FEC35C73EF3BF0BA85;
+			remoteInfo = "Pods-XMGesturePassword_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0238819A7AA77E8C6897C00BFE895D22 /* Pods-XMGesturePassword_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XMGesturePassword_Example-frameworks.sh"; sourceTree = "<group>"; };
+		05D2172005D39C7E67C852933E39F976 /* Pods-XMGesturePassword_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XMGesturePassword_Example-dummy.m"; sourceTree = "<group>"; };
+		0B8044B4FDA6AE78BBA3F4F21B9DBC59 /* Pods-XMGesturePassword_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0E54FC6F14AA628FF6CE14CDE2E1CE4E /* XMGesturePassword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGesturePassword.release.xcconfig; sourceTree = "<group>"; };
+		15A2E281D3552ECB54B9DAD09129065D /* XMGesturePassword.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XMGesturePassword.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		188443A9337BA45E77B1CBC63F70DBC4 /* XMGestureBezierCurveProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGestureBezierCurveProtocol.h; path = XMGesturePassword/Classes/XMGestureBezierCurveProtocol.h; sourceTree = "<group>"; };
+		20B1243AC245DC03AEDA7B11A45F16F4 /* Pods-XMGesturePassword_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XMGesturePassword_Example"; path = Pods_XMGesturePassword_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27504A6763EF33A773491E5493BD800B /* XMGesturePasswordView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGesturePasswordView.h; path = XMGesturePassword/Classes/XMGesturePasswordView.h; sourceTree = "<group>"; };
+		340EF9B4998A4958B5CC09FAA9774676 /* XMGesturePassword-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGesturePassword-umbrella.h"; sourceTree = "<group>"; };
+		44C14BB076E4A7896A1B9074011BF81F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		606ECEC2F00ACF4CC3FD3090C257A137 /* XMGesturePassword-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGesturePassword-prefix.pch"; sourceTree = "<group>"; };
+		6F59436B38E64D3078481ADA2361F377 /* Pods-XMGesturePassword_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Example-Info.plist"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		75176816AB9E2A77CB1F6144F4B92A38 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7D40A76CDB5F6BC8CF71AB9E509965E4 /* Pods-XMGesturePassword_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		842358167ECC62780093B282992A83A6 /* XMGesturePasswordCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGesturePasswordCell.h; path = XMGesturePassword/Classes/XMGesturePasswordCell.h; sourceTree = "<group>"; };
+		8E0C3AAF0A7F2B1E83755195830F63E7 /* Pods-XMGesturePassword_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XMGesturePassword_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		908DE6DD602D1EA23D65EC051DC79AB4 /* Pods-XMGesturePassword_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XMGesturePassword_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9715F099F9BDBFD53B271D7C30D06FCC /* Pods-XMGesturePassword_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XMGesturePassword_Example.modulemap"; sourceTree = "<group>"; };
+		97B2BB8F0AEE631E259DB24BE41E2047 /* Pods-XMGesturePassword_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0B315CE2758764682637F86DA9310F4 /* Pods-XMGesturePassword_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XMGesturePassword_Tests"; path = Pods_XMGesturePassword_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B90C9939AA2431F2D6C5C02F487319 /* Pods-XMGesturePassword_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XMGesturePassword_Example-umbrella.h"; sourceTree = "<group>"; };
+		A30F99B74F1E021F076DC5F1B0E89A31 /* Pods-XMGesturePassword_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XMGesturePassword_Tests.modulemap"; sourceTree = "<group>"; };
+		A77F86F82D6A4841571945DC23327DB0 /* XMGesturePassword-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XMGesturePassword-Info.plist"; sourceTree = "<group>"; };
+		B3074CEEDE484B95226AE1149B4835B2 /* XMGesturePasswordView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGesturePasswordView.m; path = XMGesturePassword/Classes/XMGesturePasswordView.m; sourceTree = "<group>"; };
+		B58922B1B70C3FD6E19A83D7A46A7863 /* Pods-XMGesturePassword_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XMGesturePassword_Tests-dummy.m"; sourceTree = "<group>"; };
+		BD2C5BB53E6BC88B228E392BAE190E10 /* XMGesturePassword.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMGesturePassword.modulemap; sourceTree = "<group>"; };
+		BEDAE261D67052FFB230264FFBECEDB2 /* Pods-XMGesturePassword_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Tests-Info.plist"; sourceTree = "<group>"; };
+		C052A35E24C0D40C3B0EBEC9B6D8C649 /* XMGestureBezierPlotter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGestureBezierPlotter.m; path = XMGesturePassword/Classes/XMGestureBezierPlotter.m; sourceTree = "<group>"; };
+		C4585C86039FEDDF0F83664A7FF3EF49 /* Pods-XMGesturePassword_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9AE43524BFDC489A7C378328D0169AC /* XMGestureBezierPlotter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGestureBezierPlotter.h; path = XMGesturePassword/Classes/XMGestureBezierPlotter.h; sourceTree = "<group>"; };
+		D2DB3FB20764656FCAEB6EBB25E058B6 /* XMGesturePassword */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMGesturePassword; path = XMGesturePassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF5EF804B8ED87406F20BE274E12AD4E /* XMGesturePassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGesturePassword.debug.xcconfig; sourceTree = "<group>"; };
+		E12B10452CD2D6740ABF3F694D68497E /* Pods-XMGesturePassword_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F29B3C534A51B00CF410DFC6A2E66B29 /* Pods-XMGesturePassword_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F581B8237D594F90053EB8D2FEA99D9C /* XMGesturePasswordCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGesturePasswordCell.m; path = XMGesturePassword/Classes/XMGesturePasswordCell.m; sourceTree = "<group>"; };
+		F641142402F3E8DA8C7A6E3CDB18CF25 /* Pods-XMGesturePassword_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XMGesturePassword_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F9D4962F5247362CE478F927AB03AA4B /* XMGesturePassword-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMGesturePassword-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0432AB2688B3269A60422109088D6DE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87B5EC347D6CB2227C1BEF8232575267 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B504472DBF39CBEDDC41A1814FB6E2F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D8D25346C8FD7884A06A092DFB80B8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0951BA4002A80C8F2ECEBAAF9B48BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2145E947C43C01348BD0A640B353265 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020D57CB177003DE61A99B7A5393C7E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				425FE42FB44A17BD0725EDFCB1A3A4A6 /* Pods-XMGesturePassword_Example */,
+				7B6A9E9B3309B8FE651B1C94D8503D85 /* Pods-XMGesturePassword_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		259E64F3C62F13DE081799B40AA27AC0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				75176816AB9E2A77CB1F6144F4B92A38 /* LICENSE */,
+				44C14BB076E4A7896A1B9074011BF81F /* README.md */,
+				15A2E281D3552ECB54B9DAD09129065D /* XMGesturePassword.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		425FE42FB44A17BD0725EDFCB1A3A4A6 /* Pods-XMGesturePassword_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9715F099F9BDBFD53B271D7C30D06FCC /* Pods-XMGesturePassword_Example.modulemap */,
+				8E0C3AAF0A7F2B1E83755195830F63E7 /* Pods-XMGesturePassword_Example-acknowledgements.markdown */,
+				C4585C86039FEDDF0F83664A7FF3EF49 /* Pods-XMGesturePassword_Example-acknowledgements.plist */,
+				05D2172005D39C7E67C852933E39F976 /* Pods-XMGesturePassword_Example-dummy.m */,
+				0238819A7AA77E8C6897C00BFE895D22 /* Pods-XMGesturePassword_Example-frameworks.sh */,
+				6F59436B38E64D3078481ADA2361F377 /* Pods-XMGesturePassword_Example-Info.plist */,
+				A0B90C9939AA2431F2D6C5C02F487319 /* Pods-XMGesturePassword_Example-umbrella.h */,
+				0B8044B4FDA6AE78BBA3F4F21B9DBC59 /* Pods-XMGesturePassword_Example.debug.xcconfig */,
+				97B2BB8F0AEE631E259DB24BE41E2047 /* Pods-XMGesturePassword_Example.release.xcconfig */,
+			);
+			name = "Pods-XMGesturePassword_Example";
+			path = "Target Support Files/Pods-XMGesturePassword_Example";
+			sourceTree = "<group>";
+		};
+		43BD89E2CA5154189CC446DB3769BCBB /* XMGesturePassword */ = {
+			isa = PBXGroup;
+			children = (
+				188443A9337BA45E77B1CBC63F70DBC4 /* XMGestureBezierCurveProtocol.h */,
+				C9AE43524BFDC489A7C378328D0169AC /* XMGestureBezierPlotter.h */,
+				C052A35E24C0D40C3B0EBEC9B6D8C649 /* XMGestureBezierPlotter.m */,
+				842358167ECC62780093B282992A83A6 /* XMGesturePasswordCell.h */,
+				F581B8237D594F90053EB8D2FEA99D9C /* XMGesturePasswordCell.m */,
+				27504A6763EF33A773491E5493BD800B /* XMGesturePasswordView.h */,
+				B3074CEEDE484B95226AE1149B4835B2 /* XMGesturePasswordView.m */,
+				259E64F3C62F13DE081799B40AA27AC0 /* Pod */,
+				CB062C9E9B5D9642B8D11C0AF83DF6B9 /* Support Files */,
+			);
+			name = XMGesturePassword;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7B6A9E9B3309B8FE651B1C94D8503D85 /* Pods-XMGesturePassword_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A30F99B74F1E021F076DC5F1B0E89A31 /* Pods-XMGesturePassword_Tests.modulemap */,
+				908DE6DD602D1EA23D65EC051DC79AB4 /* Pods-XMGesturePassword_Tests-acknowledgements.markdown */,
+				7D40A76CDB5F6BC8CF71AB9E509965E4 /* Pods-XMGesturePassword_Tests-acknowledgements.plist */,
+				B58922B1B70C3FD6E19A83D7A46A7863 /* Pods-XMGesturePassword_Tests-dummy.m */,
+				BEDAE261D67052FFB230264FFBECEDB2 /* Pods-XMGesturePassword_Tests-Info.plist */,
+				F641142402F3E8DA8C7A6E3CDB18CF25 /* Pods-XMGesturePassword_Tests-umbrella.h */,
+				E12B10452CD2D6740ABF3F694D68497E /* Pods-XMGesturePassword_Tests.debug.xcconfig */,
+				F29B3C534A51B00CF410DFC6A2E66B29 /* Pods-XMGesturePassword_Tests.release.xcconfig */,
+			);
+			name = "Pods-XMGesturePassword_Tests";
+			path = "Target Support Files/Pods-XMGesturePassword_Tests";
+			sourceTree = "<group>";
+		};
+		8B69083A2F5474A4AE83179863D21B23 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				43BD89E2CA5154189CC446DB3769BCBB /* XMGesturePassword */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CB062C9E9B5D9642B8D11C0AF83DF6B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD2C5BB53E6BC88B228E392BAE190E10 /* XMGesturePassword.modulemap */,
+				F9D4962F5247362CE478F927AB03AA4B /* XMGesturePassword-dummy.m */,
+				A77F86F82D6A4841571945DC23327DB0 /* XMGesturePassword-Info.plist */,
+				606ECEC2F00ACF4CC3FD3090C257A137 /* XMGesturePassword-prefix.pch */,
+				340EF9B4998A4958B5CC09FAA9774676 /* XMGesturePassword-umbrella.h */,
+				DF5EF804B8ED87406F20BE274E12AD4E /* XMGesturePassword.debug.xcconfig */,
+				0E54FC6F14AA628FF6CE14CDE2E1CE4E /* XMGesturePassword.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XMGesturePassword";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8B69083A2F5474A4AE83179863D21B23 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				FAA57F1A950BDB4092ECED66E18D5701 /* Products */,
+				020D57CB177003DE61A99B7A5393C7E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FAA57F1A950BDB4092ECED66E18D5701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20B1243AC245DC03AEDA7B11A45F16F4 /* Pods-XMGesturePassword_Example */,
+				A0B315CE2758764682637F86DA9310F4 /* Pods-XMGesturePassword_Tests */,
+				D2DB3FB20764656FCAEB6EBB25E058B6 /* XMGesturePassword */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E64FD2A28C94E5A2CA6BA2EBF90B0BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C865DEF98D5B695DBA96B38631D5F048 /* XMGestureBezierCurveProtocol.h in Headers */,
+				AB723662A596050A9D7E9745C9D2FCCE /* XMGestureBezierPlotter.h in Headers */,
+				AC7F14E90E97A420A892E5E7F3207084 /* XMGesturePassword-umbrella.h in Headers */,
+				BBCC27A3FA241FD6632BAAAFFE2AA967 /* XMGesturePasswordCell.h in Headers */,
+				B1B61ADA88F6B2BC1307529D6549C18A /* XMGesturePasswordView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		422CD5BECEFD32CE9CA93503C266ECE4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6685F34AA819A69395DFC29E3B26701 /* Pods-XMGesturePassword_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD88E822131E65B670D6821468BB4761 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C91CBDBBB3E3C13FBA5319BD4F4523C /* Pods-XMGesturePassword_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1AAB17077E692BF9671B56AABD0F2C1C /* Pods-XMGesturePassword_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3949FF3CECEC3CEB8CCA474C99D0245 /* Build configuration list for PBXNativeTarget "Pods-XMGesturePassword_Tests" */;
+			buildPhases = (
+				AD88E822131E65B670D6821468BB4761 /* Headers */,
+				1FAD193571E0BCA20058CC373281884F /* Sources */,
+				C0951BA4002A80C8F2ECEBAAF9B48BBB /* Frameworks */,
+				FF2C4A28A60B77524B4E15A03A6A5F3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				474CB7F1F9B70007EA81002172EC69E0 /* PBXTargetDependency */,
+			);
+			name = "Pods-XMGesturePassword_Tests";
+			productName = Pods_XMGesturePassword_Tests;
+			productReference = A0B315CE2758764682637F86DA9310F4 /* Pods-XMGesturePassword_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		4A2E4D6C066E07FEC35C73EF3BF0BA85 /* Pods-XMGesturePassword_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D279E9AF7A6C6160C32A10A99A7F145 /* Build configuration list for PBXNativeTarget "Pods-XMGesturePassword_Example" */;
+			buildPhases = (
+				422CD5BECEFD32CE9CA93503C266ECE4 /* Headers */,
+				3705D245377CFDDB7C2AF787F3531004 /* Sources */,
+				B504472DBF39CBEDDC41A1814FB6E2F5 /* Frameworks */,
+				5DA34811B985899A21356F679DF5630C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A3904501BADBA2EEA7AB43C496D7040 /* PBXTargetDependency */,
+			);
+			name = "Pods-XMGesturePassword_Example";
+			productName = Pods_XMGesturePassword_Example;
+			productReference = 20B1243AC245DC03AEDA7B11A45F16F4 /* Pods-XMGesturePassword_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		996893661F28E1E0B9FCC85CCAFD9082 /* XMGesturePassword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C692725911F3C90AC68E358AA5F2EF33 /* Build configuration list for PBXNativeTarget "XMGesturePassword" */;
+			buildPhases = (
+				0E64FD2A28C94E5A2CA6BA2EBF90B0BF /* Headers */,
+				59DC06C0F94775B6F12D14545BB018B7 /* Sources */,
+				0432AB2688B3269A60422109088D6DE7 /* Frameworks */,
+				2A610A9A9B9C80C8F1C069170B58E625 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMGesturePassword;
+			productName = XMGesturePassword;
+			productReference = D2DB3FB20764656FCAEB6EBB25E058B6 /* XMGesturePassword */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FAA57F1A950BDB4092ECED66E18D5701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A2E4D6C066E07FEC35C73EF3BF0BA85 /* Pods-XMGesturePassword_Example */,
+				1AAB17077E692BF9671B56AABD0F2C1C /* Pods-XMGesturePassword_Tests */,
+				996893661F28E1E0B9FCC85CCAFD9082 /* XMGesturePassword */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A610A9A9B9C80C8F1C069170B58E625 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DA34811B985899A21356F679DF5630C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF2C4A28A60B77524B4E15A03A6A5F3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FAD193571E0BCA20058CC373281884F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD3B4897A4ABF974679D481935E696E /* Pods-XMGesturePassword_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3705D245377CFDDB7C2AF787F3531004 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFADF4CACA886B5DADFE8FA76E9681A1 /* Pods-XMGesturePassword_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59DC06C0F94775B6F12D14545BB018B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A062DE8B30EAE88D078E5BE1D5F09626 /* XMGestureBezierPlotter.m in Sources */,
+				B4AECB7ADD213ECC658A0C887BEC4106 /* XMGesturePassword-dummy.m in Sources */,
+				0750B1C363EE2C96D0F830095C0A152E /* XMGesturePasswordCell.m in Sources */,
+				47BA926ECAE3B1D7C92EA6A9E3623637 /* XMGesturePasswordView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		474CB7F1F9B70007EA81002172EC69E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-XMGesturePassword_Example";
+			target = 4A2E4D6C066E07FEC35C73EF3BF0BA85 /* Pods-XMGesturePassword_Example */;
+			targetProxy = 5EEF86D8C96FD01E5152F3F47469BE5C /* PBXContainerItemProxy */;
+		};
+		7A3904501BADBA2EEA7AB43C496D7040 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XMGesturePassword;
+			target = 996893661F28E1E0B9FCC85CCAFD9082 /* XMGesturePassword */;
+			targetProxy = 11A7ACE89F6D4C81AE2E249B9AAB8425 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		11B0FC56210068F645CDD3426184FE15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F29B3C534A51B00CF410DFC6A2E66B29 /* Pods-XMGesturePassword_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XMGesturePassword_Tests/Pods-XMGesturePassword_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XMGesturePassword_Tests/Pods-XMGesturePassword_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6CC96FF59914D49A2A8FC6A6BB41E582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5EF804B8ED87406F20BE274E12AD4E /* XMGesturePassword.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMGesturePassword/XMGesturePassword-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMGesturePassword/XMGesturePassword-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMGesturePassword/XMGesturePassword.modulemap";
+				PRODUCT_MODULE_NAME = XMGesturePassword;
+				PRODUCT_NAME = XMGesturePassword;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		87810CF219C8DA116EB6748A2BE7295E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E54FC6F14AA628FF6CE14CDE2E1CE4E /* XMGesturePassword.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XMGesturePassword/XMGesturePassword-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XMGesturePassword/XMGesturePassword-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XMGesturePassword/XMGesturePassword.modulemap";
+				PRODUCT_MODULE_NAME = XMGesturePassword;
+				PRODUCT_NAME = XMGesturePassword;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A85B2322FD1B64604B6CCE836C02D2B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E12B10452CD2D6740ABF3F694D68497E /* Pods-XMGesturePassword_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XMGesturePassword_Tests/Pods-XMGesturePassword_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XMGesturePassword_Tests/Pods-XMGesturePassword_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C3ACEA5E64A4D29E5B138C98A24C0982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B2BB8F0AEE631E259DB24BE41E2047 /* Pods-XMGesturePassword_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XMGesturePassword_Example/Pods-XMGesturePassword_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XMGesturePassword_Example/Pods-XMGesturePassword_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F73E0C3D726B7D2537925A9C97D89942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B8044B4FDA6AE78BBA3F4F21B9DBC59 /* Pods-XMGesturePassword_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XMGesturePassword_Example/Pods-XMGesturePassword_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XMGesturePassword_Example/Pods-XMGesturePassword_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D279E9AF7A6C6160C32A10A99A7F145 /* Build configuration list for PBXNativeTarget "Pods-XMGesturePassword_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F73E0C3D726B7D2537925A9C97D89942 /* Debug */,
+				C3ACEA5E64A4D29E5B138C98A24C0982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3949FF3CECEC3CEB8CCA474C99D0245 /* Build configuration list for PBXNativeTarget "Pods-XMGesturePassword_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A85B2322FD1B64604B6CCE836C02D2B4 /* Debug */,
+				11B0FC56210068F645CDD3426184FE15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C692725911F3C90AC68E358AA5F2EF33 /* Build configuration list for PBXNativeTarget "XMGesturePassword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CC96FF59914D49A2A8FC6A6BB41E582 /* Debug */,
+				87810CF219C8DA116EB6748A2BE7295E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

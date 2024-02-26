@@ -1,0 +1,16 @@
+PODS:
+  - XMGesturePassword (1.0.0)
+
+DEPENDENCIES:
+  - XMGesturePassword (from `../`)
+
+EXTERNAL SOURCES:
+  XMGesturePassword:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XMGesturePassword: 1961fa7e586c68b8a7cb4ca394f68a7ef00f45b6
+
+PODFILE CHECKSUM: 1f8a82823f28027d4fb51360ad21e6b94ccdcf8b
+
+COCOAPODS: 1.15.0

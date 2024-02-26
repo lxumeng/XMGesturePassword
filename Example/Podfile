@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'XMGesturePassword_Example' do
+  pod 'XMGesturePassword', :path => '../'
+
+  target 'XMGesturePassword_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
