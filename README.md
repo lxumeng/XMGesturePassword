@@ -9,7 +9,11 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+![image](https://raw.githubusercontent.com/lxumeng/XMPicture/main/GesturePassword.gif)
+
 ## Requirements
+
+The minimum supported OS version is iOS12.
 
 ## Installation
 

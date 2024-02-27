@@ -43,7 +43,7 @@
 
 - (XMGesturePasswordView *)passwordView {
     if (!_passwordView) {
-        _passwordView = [[XMGesturePasswordView alloc] initWithFrame:CGRectMake(30, 100, self.view.frame.size.width - 60, self.view.frame.size.width - 60)];
+        _passwordView = [[XMGesturePasswordView alloc] initWithFrame:CGRectMake(10, 200, self.view.frame.size.width - 20, self.view.frame.size.width - 20)];
         _passwordView.delegate = self;
         _passwordView.errorColor = [UIColor redColor];
     }
