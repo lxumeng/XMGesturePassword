@@ -7,10 +7,15 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^PasswordBlock) (NSString *password);
+@protocol XMGesturePasswordViewDelegate <NSObject>
+
+- (void)xmGestureResultPassword:(NSString *)password;
+
+@end
 
 @interface XMGesturePasswordView : UIView
 
+@property (nonatomic, weak) id<XMGesturePasswordViewDelegate> delegate;
 /// item背景色 默认浅灰色
 @property (nonatomic, strong) UIColor *itemBackGoundColor;
 /// item中间圆球的颜色 默认灰色
@@ -28,8 +33,5 @@ typedef void (^PasswordBlock) (NSString *password);
 - (void)refresh;
 /// 错误
 - (void)showError;
-/// 添加密码回调
-/// @param passwordBlock 密码回调
-- (void)addPasswordBlock:(PasswordBlock)passwordBlock;
 
 @end

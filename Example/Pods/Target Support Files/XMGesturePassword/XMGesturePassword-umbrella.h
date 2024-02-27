@@ -10,10 +10,10 @@
 #endif
 #endif
 
-#import "XMGestureBezierCurveProtocol.h"
-#import "XMGestureBezierPlotter.h"
 #import "XMGesturePasswordCell.h"
+#import "XMGesturePasswordView+BezierPlotter.h"
 #import "XMGesturePasswordView.h"
+#import "XMGesturePasswordViewProtocol.h"
 
 FOUNDATION_EXPORT double XMGesturePasswordVersionNumber;
 FOUNDATION_EXPORT const unsigned char XMGesturePasswordVersionString[];

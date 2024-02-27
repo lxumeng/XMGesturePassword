@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0750B1C363EE2C96D0F830095C0A152E /* XMGesturePasswordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F581B8237D594F90053EB8D2FEA99D9C /* XMGesturePasswordCell.m */; };
+		05A1EF1451FC3C8885159A96EE1DE6CC /* XMGesturePasswordCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A133DB81A3F4A217DC7A0D53740D75 /* XMGesturePasswordCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13EDC23C1E9575E7866A25C6FB15E9FD /* XMGesturePasswordView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9481C5D7EDE2A84FE26848EB460554E3 /* XMGesturePasswordView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C91CBDBBB3E3C13FBA5319BD4F4523C /* Pods-XMGesturePassword_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F641142402F3E8DA8C7A6E3CDB18CF25 /* Pods-XMGesturePassword_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47BA926ECAE3B1D7C92EA6A9E3623637 /* XMGesturePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3074CEEDE484B95226AE1149B4835B2 /* XMGesturePasswordView.m */; };
+		46F55E85D24D24AB45C42354BBAA11E5 /* XMGesturePasswordViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ACF2B3479CCB7723A2F201AF62E8851 /* XMGesturePasswordViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CD3B4897A4ABF974679D481935E696E /* Pods-XMGesturePassword_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B58922B1B70C3FD6E19A83D7A46A7863 /* Pods-XMGesturePassword_Tests-dummy.m */; };
 		7D8D25346C8FD7884A06A092DFB80B8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		87B5EC347D6CB2227C1BEF8232575267 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A062DE8B30EAE88D078E5BE1D5F09626 /* XMGestureBezierPlotter.m in Sources */ = {isa = PBXBuildFile; fileRef = C052A35E24C0D40C3B0EBEC9B6D8C649 /* XMGestureBezierPlotter.m */; };
+		8AADC31C535669F43ED2E88F61688412 /* XMGesturePasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7668B2E2BE048BE1C4D665FBF51A9C /* XMGesturePasswordView.m */; };
+		9657CE76185B44B5FC93FA78DB923F1B /* XMGesturePassword-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D3887C0B9CC48EBA7F6BBD059C85EFCD /* XMGesturePassword-dummy.m */; };
 		A2145E947C43C01348BD0A640B353265 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		AB723662A596050A9D7E9745C9D2FCCE /* XMGestureBezierPlotter.h in Headers */ = {isa = PBXBuildFile; fileRef = C9AE43524BFDC489A7C378328D0169AC /* XMGestureBezierPlotter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC7F14E90E97A420A892E5E7F3207084 /* XMGesturePassword-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 340EF9B4998A4958B5CC09FAA9774676 /* XMGesturePassword-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B1B61ADA88F6B2BC1307529D6549C18A /* XMGesturePasswordView.h in Headers */ = {isa = PBXBuildFile; fileRef = 27504A6763EF33A773491E5493BD800B /* XMGesturePasswordView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4AECB7ADD213ECC658A0C887BEC4106 /* XMGesturePassword-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9D4962F5247362CE478F927AB03AA4B /* XMGesturePassword-dummy.m */; };
-		BBCC27A3FA241FD6632BAAAFFE2AA967 /* XMGesturePasswordCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 842358167ECC62780093B282992A83A6 /* XMGesturePasswordCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C865DEF98D5B695DBA96B38631D5F048 /* XMGestureBezierCurveProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 188443A9337BA45E77B1CBC63F70DBC4 /* XMGestureBezierCurveProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4601177F49CBD044315062BD0498E18 /* XMGesturePasswordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87FB2C7927ADAEF7E08E8513DDD67655 /* XMGesturePasswordCell.m */; };
+		CB6355579A47011E821EDB59705224B2 /* XMGesturePasswordView+BezierPlotter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B7CD266FFBA86A5BB8C6E8D4E2CD1FB /* XMGesturePasswordView+BezierPlotter.m */; };
+		D2043F0F60D33875211DFFB5026600FD /* XMGesturePasswordView+BezierPlotter.h in Headers */ = {isa = PBXBuildFile; fileRef = FEBAC0E9DA5A163993A993EE92A9F499 /* XMGesturePasswordView+BezierPlotter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0C90EBC1F2CF359BFB1E5088E82A89E /* XMGesturePassword-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B7AE917CDB47861DEEADF008F5B1D6 /* XMGesturePassword-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F6685F34AA819A69395DFC29E3B26701 /* Pods-XMGesturePassword_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0B90C9939AA2431F2D6C5C02F487319 /* Pods-XMGesturePassword_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FFADF4CACA886B5DADFE8FA76E9681A1 /* Pods-XMGesturePassword_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D2172005D39C7E67C852933E39F976 /* Pods-XMGesturePassword_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -45,43 +45,43 @@
 /* Begin PBXFileReference section */
 		0238819A7AA77E8C6897C00BFE895D22 /* Pods-XMGesturePassword_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XMGesturePassword_Example-frameworks.sh"; sourceTree = "<group>"; };
 		05D2172005D39C7E67C852933E39F976 /* Pods-XMGesturePassword_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XMGesturePassword_Example-dummy.m"; sourceTree = "<group>"; };
+		07C68CE34BF5EFB76F231C73D0EB62D7 /* XMGesturePassword.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMGesturePassword.modulemap; sourceTree = "<group>"; };
 		0B8044B4FDA6AE78BBA3F4F21B9DBC59 /* Pods-XMGesturePassword_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		0E54FC6F14AA628FF6CE14CDE2E1CE4E /* XMGesturePassword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGesturePassword.release.xcconfig; sourceTree = "<group>"; };
-		15A2E281D3552ECB54B9DAD09129065D /* XMGesturePassword.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XMGesturePassword.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		188443A9337BA45E77B1CBC63F70DBC4 /* XMGestureBezierCurveProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGestureBezierCurveProtocol.h; path = XMGesturePassword/Classes/XMGestureBezierCurveProtocol.h; sourceTree = "<group>"; };
+		1D6A27B713629157897C4BC1B7D58AEB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1D8759F474102C418AAE888E36710214 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		20B1243AC245DC03AEDA7B11A45F16F4 /* Pods-XMGesturePassword_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XMGesturePassword_Example"; path = Pods_XMGesturePassword_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		27504A6763EF33A773491E5493BD800B /* XMGesturePasswordView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGesturePasswordView.h; path = XMGesturePassword/Classes/XMGesturePasswordView.h; sourceTree = "<group>"; };
-		340EF9B4998A4958B5CC09FAA9774676 /* XMGesturePassword-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGesturePassword-umbrella.h"; sourceTree = "<group>"; };
-		44C14BB076E4A7896A1B9074011BF81F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		606ECEC2F00ACF4CC3FD3090C257A137 /* XMGesturePassword-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGesturePassword-prefix.pch"; sourceTree = "<group>"; };
+		2ACF2B3479CCB7723A2F201AF62E8851 /* XMGesturePasswordViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGesturePasswordViewProtocol.h; path = XMGesturePassword/Classes/XMGesturePasswordViewProtocol.h; sourceTree = "<group>"; };
+		2B7CD266FFBA86A5BB8C6E8D4E2CD1FB /* XMGesturePasswordView+BezierPlotter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XMGesturePasswordView+BezierPlotter.m"; path = "XMGesturePassword/Classes/XMGesturePasswordView+BezierPlotter.m"; sourceTree = "<group>"; };
+		4371594A200183F6DCE1B32635A526AB /* XMGesturePassword.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = XMGesturePassword.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		569E419E84E9BBA610202747F244454F /* XMGesturePassword-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XMGesturePassword-Info.plist"; sourceTree = "<group>"; };
+		636AECA61A344BF666D4EC6F28979609 /* XMGesturePassword-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGesturePassword-prefix.pch"; sourceTree = "<group>"; };
+		69B7AE917CDB47861DEEADF008F5B1D6 /* XMGesturePassword-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XMGesturePassword-umbrella.h"; sourceTree = "<group>"; };
 		6F59436B38E64D3078481ADA2361F377 /* Pods-XMGesturePassword_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Example-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		75176816AB9E2A77CB1F6144F4B92A38 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		783546D100467E6B601A8DAE129B23E4 /* XMGesturePassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGesturePassword.debug.xcconfig; sourceTree = "<group>"; };
+		7A7668B2E2BE048BE1C4D665FBF51A9C /* XMGesturePasswordView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGesturePasswordView.m; path = XMGesturePassword/Classes/XMGesturePasswordView.m; sourceTree = "<group>"; };
 		7D40A76CDB5F6BC8CF71AB9E509965E4 /* Pods-XMGesturePassword_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		842358167ECC62780093B282992A83A6 /* XMGesturePasswordCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGesturePasswordCell.h; path = XMGesturePassword/Classes/XMGesturePasswordCell.h; sourceTree = "<group>"; };
+		87FB2C7927ADAEF7E08E8513DDD67655 /* XMGesturePasswordCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGesturePasswordCell.m; path = XMGesturePassword/Classes/XMGesturePasswordCell.m; sourceTree = "<group>"; };
+		883CA3C66737ABC89DE6F73E25FE28D2 /* XMGesturePassword.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGesturePassword.release.xcconfig; sourceTree = "<group>"; };
 		8E0C3AAF0A7F2B1E83755195830F63E7 /* Pods-XMGesturePassword_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XMGesturePassword_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		908DE6DD602D1EA23D65EC051DC79AB4 /* Pods-XMGesturePassword_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XMGesturePassword_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9481C5D7EDE2A84FE26848EB460554E3 /* XMGesturePasswordView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGesturePasswordView.h; path = XMGesturePassword/Classes/XMGesturePasswordView.h; sourceTree = "<group>"; };
 		9715F099F9BDBFD53B271D7C30D06FCC /* Pods-XMGesturePassword_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XMGesturePassword_Example.modulemap"; sourceTree = "<group>"; };
 		97B2BB8F0AEE631E259DB24BE41E2047 /* Pods-XMGesturePassword_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0B315CE2758764682637F86DA9310F4 /* Pods-XMGesturePassword_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-XMGesturePassword_Tests"; path = Pods_XMGesturePassword_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B90C9939AA2431F2D6C5C02F487319 /* Pods-XMGesturePassword_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XMGesturePassword_Example-umbrella.h"; sourceTree = "<group>"; };
 		A30F99B74F1E021F076DC5F1B0E89A31 /* Pods-XMGesturePassword_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-XMGesturePassword_Tests.modulemap"; sourceTree = "<group>"; };
-		A77F86F82D6A4841571945DC23327DB0 /* XMGesturePassword-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XMGesturePassword-Info.plist"; sourceTree = "<group>"; };
-		B3074CEEDE484B95226AE1149B4835B2 /* XMGesturePasswordView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGesturePasswordView.m; path = XMGesturePassword/Classes/XMGesturePasswordView.m; sourceTree = "<group>"; };
 		B58922B1B70C3FD6E19A83D7A46A7863 /* Pods-XMGesturePassword_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XMGesturePassword_Tests-dummy.m"; sourceTree = "<group>"; };
-		BD2C5BB53E6BC88B228E392BAE190E10 /* XMGesturePassword.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XMGesturePassword.modulemap; sourceTree = "<group>"; };
 		BEDAE261D67052FFB230264FFBECEDB2 /* Pods-XMGesturePassword_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Tests-Info.plist"; sourceTree = "<group>"; };
-		C052A35E24C0D40C3B0EBEC9B6D8C649 /* XMGestureBezierPlotter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGestureBezierPlotter.m; path = XMGesturePassword/Classes/XMGestureBezierPlotter.m; sourceTree = "<group>"; };
 		C4585C86039FEDDF0F83664A7FF3EF49 /* Pods-XMGesturePassword_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XMGesturePassword_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C9AE43524BFDC489A7C378328D0169AC /* XMGestureBezierPlotter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGestureBezierPlotter.h; path = XMGesturePassword/Classes/XMGestureBezierPlotter.h; sourceTree = "<group>"; };
 		D2DB3FB20764656FCAEB6EBB25E058B6 /* XMGesturePassword */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XMGesturePassword; path = XMGesturePassword.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF5EF804B8ED87406F20BE274E12AD4E /* XMGesturePassword.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XMGesturePassword.debug.xcconfig; sourceTree = "<group>"; };
+		D3887C0B9CC48EBA7F6BBD059C85EFCD /* XMGesturePassword-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMGesturePassword-dummy.m"; sourceTree = "<group>"; };
 		E12B10452CD2D6740ABF3F694D68497E /* Pods-XMGesturePassword_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F29B3C534A51B00CF410DFC6A2E66B29 /* Pods-XMGesturePassword_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XMGesturePassword_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F581B8237D594F90053EB8D2FEA99D9C /* XMGesturePasswordCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = XMGesturePasswordCell.m; path = XMGesturePassword/Classes/XMGesturePasswordCell.m; sourceTree = "<group>"; };
 		F641142402F3E8DA8C7A6E3CDB18CF25 /* Pods-XMGesturePassword_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XMGesturePassword_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F9D4962F5247362CE478F927AB03AA4B /* XMGesturePassword-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XMGesturePassword-dummy.m"; sourceTree = "<group>"; };
+		F6A133DB81A3F4A217DC7A0D53740D75 /* XMGesturePasswordCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = XMGesturePasswordCell.h; path = XMGesturePassword/Classes/XMGesturePasswordCell.h; sourceTree = "<group>"; };
+		FEBAC0E9DA5A163993A993EE92A9F499 /* XMGesturePasswordView+BezierPlotter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XMGesturePasswordView+BezierPlotter.h"; path = "XMGesturePassword/Classes/XMGesturePasswordView+BezierPlotter.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +121,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		259E64F3C62F13DE081799B40AA27AC0 /* Pod */ = {
+		11EC4E607E8912F81164E5C0D20F23FD /* XMGesturePassword */ = {
 			isa = PBXGroup;
 			children = (
-				75176816AB9E2A77CB1F6144F4B92A38 /* LICENSE */,
-				44C14BB076E4A7896A1B9074011BF81F /* README.md */,
-				15A2E281D3552ECB54B9DAD09129065D /* XMGesturePassword.podspec */,
+				F6A133DB81A3F4A217DC7A0D53740D75 /* XMGesturePasswordCell.h */,
+				87FB2C7927ADAEF7E08E8513DDD67655 /* XMGesturePasswordCell.m */,
+				9481C5D7EDE2A84FE26848EB460554E3 /* XMGesturePasswordView.h */,
+				7A7668B2E2BE048BE1C4D665FBF51A9C /* XMGesturePasswordView.m */,
+				FEBAC0E9DA5A163993A993EE92A9F499 /* XMGesturePasswordView+BezierPlotter.h */,
+				2B7CD266FFBA86A5BB8C6E8D4E2CD1FB /* XMGesturePasswordView+BezierPlotter.m */,
+				2ACF2B3479CCB7723A2F201AF62E8851 /* XMGesturePasswordViewProtocol.h */,
+				27E3F56C4355571AF6CB846D18D97703 /* Pod */,
+				4CC82DB4E664EED8171A3C9B1A93F957 /* Support Files */,
+			);
+			name = XMGesturePassword;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		27E3F56C4355571AF6CB846D18D97703 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1D6A27B713629157897C4BC1B7D58AEB /* LICENSE */,
+				1D8759F474102C418AAE888E36710214 /* README.md */,
+				4371594A200183F6DCE1B32635A526AB /* XMGesturePassword.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
@@ -148,21 +165,19 @@
 			path = "Target Support Files/Pods-XMGesturePassword_Example";
 			sourceTree = "<group>";
 		};
-		43BD89E2CA5154189CC446DB3769BCBB /* XMGesturePassword */ = {
+		4CC82DB4E664EED8171A3C9B1A93F957 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				188443A9337BA45E77B1CBC63F70DBC4 /* XMGestureBezierCurveProtocol.h */,
-				C9AE43524BFDC489A7C378328D0169AC /* XMGestureBezierPlotter.h */,
-				C052A35E24C0D40C3B0EBEC9B6D8C649 /* XMGestureBezierPlotter.m */,
-				842358167ECC62780093B282992A83A6 /* XMGesturePasswordCell.h */,
-				F581B8237D594F90053EB8D2FEA99D9C /* XMGesturePasswordCell.m */,
-				27504A6763EF33A773491E5493BD800B /* XMGesturePasswordView.h */,
-				B3074CEEDE484B95226AE1149B4835B2 /* XMGesturePasswordView.m */,
-				259E64F3C62F13DE081799B40AA27AC0 /* Pod */,
-				CB062C9E9B5D9642B8D11C0AF83DF6B9 /* Support Files */,
+				07C68CE34BF5EFB76F231C73D0EB62D7 /* XMGesturePassword.modulemap */,
+				D3887C0B9CC48EBA7F6BBD059C85EFCD /* XMGesturePassword-dummy.m */,
+				569E419E84E9BBA610202747F244454F /* XMGesturePassword-Info.plist */,
+				636AECA61A344BF666D4EC6F28979609 /* XMGesturePassword-prefix.pch */,
+				69B7AE917CDB47861DEEADF008F5B1D6 /* XMGesturePassword-umbrella.h */,
+				783546D100467E6B601A8DAE129B23E4 /* XMGesturePassword.debug.xcconfig */,
+				883CA3C66737ABC89DE6F73E25FE28D2 /* XMGesturePassword.release.xcconfig */,
 			);
-			name = XMGesturePassword;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XMGesturePassword";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -192,24 +207,9 @@
 		8B69083A2F5474A4AE83179863D21B23 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				43BD89E2CA5154189CC446DB3769BCBB /* XMGesturePassword */,
+				11EC4E607E8912F81164E5C0D20F23FD /* XMGesturePassword */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		CB062C9E9B5D9642B8D11C0AF83DF6B9 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				BD2C5BB53E6BC88B228E392BAE190E10 /* XMGesturePassword.modulemap */,
-				F9D4962F5247362CE478F927AB03AA4B /* XMGesturePassword-dummy.m */,
-				A77F86F82D6A4841571945DC23327DB0 /* XMGesturePassword-Info.plist */,
-				606ECEC2F00ACF4CC3FD3090C257A137 /* XMGesturePassword-prefix.pch */,
-				340EF9B4998A4958B5CC09FAA9774676 /* XMGesturePassword-umbrella.h */,
-				DF5EF804B8ED87406F20BE274E12AD4E /* XMGesturePassword.debug.xcconfig */,
-				0E54FC6F14AA628FF6CE14CDE2E1CE4E /* XMGesturePassword.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/XMGesturePassword";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -244,18 +244,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0E64FD2A28C94E5A2CA6BA2EBF90B0BF /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C865DEF98D5B695DBA96B38631D5F048 /* XMGestureBezierCurveProtocol.h in Headers */,
-				AB723662A596050A9D7E9745C9D2FCCE /* XMGestureBezierPlotter.h in Headers */,
-				AC7F14E90E97A420A892E5E7F3207084 /* XMGesturePassword-umbrella.h in Headers */,
-				BBCC27A3FA241FD6632BAAAFFE2AA967 /* XMGesturePasswordCell.h in Headers */,
-				B1B61ADA88F6B2BC1307529D6549C18A /* XMGesturePasswordView.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		422CD5BECEFD32CE9CA93503C266ECE4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -269,6 +257,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C91CBDBBB3E3C13FBA5319BD4F4523C /* Pods-XMGesturePassword_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3CCA3A5239BD488468BAA143DBFF195 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0C90EBC1F2CF359BFB1E5088E82A89E /* XMGesturePassword-umbrella.h in Headers */,
+				05A1EF1451FC3C8885159A96EE1DE6CC /* XMGesturePasswordCell.h in Headers */,
+				13EDC23C1E9575E7866A25C6FB15E9FD /* XMGesturePasswordView.h in Headers */,
+				D2043F0F60D33875211DFFB5026600FD /* XMGesturePasswordView+BezierPlotter.h in Headers */,
+				46F55E85D24D24AB45C42354BBAA11E5 /* XMGesturePasswordViewProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +317,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C692725911F3C90AC68E358AA5F2EF33 /* Build configuration list for PBXNativeTarget "XMGesturePassword" */;
 			buildPhases = (
-				0E64FD2A28C94E5A2CA6BA2EBF90B0BF /* Headers */,
-				59DC06C0F94775B6F12D14545BB018B7 /* Sources */,
+				D3CCA3A5239BD488468BAA143DBFF195 /* Headers */,
+				E885C0690AE6AB73706D36E6E71FB208 /* Sources */,
 				0432AB2688B3269A60422109088D6DE7 /* Frameworks */,
 				2A610A9A9B9C80C8F1C069170B58E625 /* Resources */,
 			);
@@ -401,14 +401,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		59DC06C0F94775B6F12D14545BB018B7 /* Sources */ = {
+		E885C0690AE6AB73706D36E6E71FB208 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A062DE8B30EAE88D078E5BE1D5F09626 /* XMGestureBezierPlotter.m in Sources */,
-				B4AECB7ADD213ECC658A0C887BEC4106 /* XMGesturePassword-dummy.m in Sources */,
-				0750B1C363EE2C96D0F830095C0A152E /* XMGesturePasswordCell.m in Sources */,
-				47BA926ECAE3B1D7C92EA6A9E3623637 /* XMGesturePasswordView.m in Sources */,
+				9657CE76185B44B5FC93FA78DB923F1B /* XMGesturePassword-dummy.m in Sources */,
+				B4601177F49CBD044315062BD0498E18 /* XMGesturePasswordCell.m in Sources */,
+				8AADC31C535669F43ED2E88F61688412 /* XMGesturePasswordView.m in Sources */,
+				CB6355579A47011E821EDB59705224B2 /* XMGesturePasswordView+BezierPlotter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +466,7 @@
 		};
 		6CC96FF59914D49A2A8FC6A6BB41E582 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF5EF804B8ED87406F20BE274E12AD4E /* XMGesturePassword.debug.xcconfig */;
+			baseConfigurationReference = 783546D100467E6B601A8DAE129B23E4 /* XMGesturePassword.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -559,7 +559,7 @@
 		};
 		87810CF219C8DA116EB6748A2BE7295E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E54FC6F14AA628FF6CE14CDE2E1CE4E /* XMGesturePassword.release.xcconfig */;
+			baseConfigurationReference = 883CA3C66737ABC89DE6F73E25FE28D2 /* XMGesturePassword.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
