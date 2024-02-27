@@ -9,38 +9,35 @@
 #import "XMGesturePasswordCell.h"
 #import "XMGesturePasswordView+BezierPlotter.h"
 
-static const CGFloat itemWidth = 70;
 static NSString *cellId = @"XMGesturePasswordCell";
 
-@interface XMGesturePasswordView ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface XMGesturePasswordView () <UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,XMGesturePasswordViewProtocol>
 
-@property (nonatomic, assign) BOOL isShowError;
+@property (nonatomic) CGFloat itemSpacing;
 
 @end
 
 @implementation XMGesturePasswordView
 
-@synthesize collectionView = _collectionView;
-@synthesize path = _path;
-@synthesize gestrueLayer = _gestrueLayer;
 @synthesize passwordIndexPathArr = _passwordIndexPathArr;
+@synthesize collectionView       = _collectionView;
+@synthesize path                 = _path;
+@synthesize gestrueLayer         = _gestrueLayer;
+@synthesize showError            = _showError;
 
 #pragma mark - Override
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
+- (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         self.layer.masksToBounds = true;
-        self.itemBackGoundColor = [UIColor lightGrayColor];
-        self.itemCenterBallColor = [UIColor grayColor];
-        self.itemCenterBallErrorColor = [UIColor grayColor];
-        self.lineNormalColor = [UIColor grayColor];
-        self.lineErrorColor = [UIColor redColor];
-        
+        self.lineWidth = 20.0f;
+        self.diameter = 70.0f;
+        self.itemSpacing = (self.bounds.size.width - 3*self.diameter)*0.25f;
+        self.normalColor = [UIColor grayColor];
+        self.errorColor = [UIColor redColor];
         [self addSubview:self.collectionView];
-        //初始化手势
-        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(_panMethod:)];
+        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panMethod:)];
         [self.collectionView addGestureRecognizer:pan];
         [self.layer addSublayer:self.gestrueLayer];
     }
@@ -54,9 +51,13 @@ static NSString *cellId = @"XMGesturePasswordCell";
 
 #pragma mark - Public
 
+- (void)reset {
+    [self resetView];
+}
 
-
-
+- (void)showError {
+    [self errorPath];
+}
 
 #pragma mark - CollectonViewDataSource
 
@@ -65,62 +66,45 @@ static NSString *cellId = @"XMGesturePasswordCell";
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
-    return [self _itemSpacing];
+    return self.itemSpacing;
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
-    return [self _itemSpacing];
+    return self.itemSpacing;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(itemWidth, itemWidth);
+    return CGSizeMake(self.diameter, self.diameter);
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
-    return UIEdgeInsetsMake([self _itemSpacing], [self _itemSpacing], [self _itemSpacing], [self _itemSpacing]);
+    return UIEdgeInsetsMake(self.itemSpacing, self.itemSpacing, self.itemSpacing, self.itemSpacing);
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
     XMGesturePasswordCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];
     [self setCell:cell isSelected:[self.passwordIndexPathArr containsObject:indexPath]];
-    
     return cell;
 }
 
-- (void)setCell:(XMGesturePasswordCell *)cell isSelected:(BOOL)isSelected
-{
-    cell.selected = isSelected;
-    if (cell.isSelected) {
-        if (self.isShowError) {
-            cell.backgroundColor = [UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1];
-            cell.centerBall.backgroundColor = self.itemCenterBallErrorColor;
-            cell.layer.borderColor = self.itemCenterBallErrorColor.CGColor;
-        } else {
-            cell.backgroundColor = self.itemBackGoundColor;
-            cell.centerBall.backgroundColor = self.itemCenterBallColor;
-            cell.layer.borderColor = self.itemCenterBallColor.CGColor;
-        }
+- (void)setCell:(XMGesturePasswordCell *)cell isSelected:(BOOL)isSelected {
+    cell.xmSelected = isSelected;
+    if (!isSelected) {
+        return;
     }
-}
-
-#pragma mark - Private
-
-- (CGFloat)_itemSpacing {
-    return (self.bounds.size.width - 3*itemWidth)*0.25f;
-}
-
-//设置线条正常颜色
-- (void)setLineNormalColor:(UIColor *)lineNormalColor {
-    _lineNormalColor = lineNormalColor;
-    self.gestrueLayer.strokeColor = lineNormalColor.CGColor;
+    if (self.isShowError) {
+        cell.centerBall.backgroundColor = self.errorColor;
+        cell.layer.borderColor = self.errorColor.CGColor;
+    } else {
+        cell.centerBall.backgroundColor = self.normalColor;
+        cell.layer.borderColor = self.normalColor.CGColor;
+    }
 }
 
 #pragma mark - Getter
 
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
-        //初始化collectionView
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor clearColor];
@@ -149,13 +133,10 @@ static NSString *cellId = @"XMGesturePasswordCell";
     if (!_gestrueLayer) {
         _gestrueLayer = [CAShapeLayer layer];
         _gestrueLayer.fillColor = [UIColor clearColor].CGColor;
-        if (self.lineWidth > 0) {
-            _gestrueLayer.lineWidth = self.lineWidth;
-        }else{
-            _gestrueLayer.lineWidth = 20;
-        }
+        _gestrueLayer.lineWidth = self.lineWidth;
         _gestrueLayer.lineCap = kCALineCapRound;
         _gestrueLayer.lineJoin = kCALineJoinRound;
+        _gestrueLayer.strokeColor = self.normalColor.CGColor;
     }
     return _gestrueLayer;
 }

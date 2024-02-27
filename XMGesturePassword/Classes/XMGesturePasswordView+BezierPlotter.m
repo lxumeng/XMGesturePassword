@@ -2,68 +2,45 @@
 //  XMGesturePasswordView+BezierPlotter.m
 //  XMGesturePassword
 //
-//  Created by xixi on 2024/2/26.
+//  Created by lxumeng on 2024/2/26.
 //
 
 #import "XMGesturePasswordView+BezierPlotter.h"
 #import "XMGesturePasswordCell.h"
-#pragma clang diagnostic push
 
-#pragma clang diagnostic ignored "-Wprotocol"
+@interface XMGesturePasswordView () <XMGesturePasswordViewProtocol>
+
+@end
 
 @implementation XMGesturePasswordView (BezierPlotter)
 
-//报错
-- (void)showError {
-    self.isShowError = YES;
-    [self.collectionView reloadData];
-    self.gestrueLayer.strokeColor = self.lineErrorColor.CGColor;
-    [self _earthquake:self];
-    
-    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.7 * NSEC_PER_SEC));
-    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
-        [self refresh];
-    });
-}
-//重置
-- (void)refresh {
-    self.isShowError = NO;
-    //刷新列表
+#pragma mark - Public
+
+- (void)resetView {
+    self.showError = NO;
     [self.passwordIndexPathArr removeAllObjects];
     [self.collectionView reloadData];
-    //更新路径
     [self.path removeAllPoints];
     self.gestrueLayer.path = self.path.CGPath;
-    self.gestrueLayer.strokeColor = self.lineNormalColor.CGColor;
+    self.gestrueLayer.strokeColor = self.normalColor.CGColor;
 }
 
-- (void)_earthquake:(UIView*)itemView {
-    CGFloat t = 4.0;
-    CGAffineTransform leftQuake  = CGAffineTransformTranslate(CGAffineTransformIdentity, t, 0);
-    CGAffineTransform rightQuake = CGAffineTransformTranslate(CGAffineTransformIdentity, -t, 0); //水平晃动
-    itemView.transform = leftQuake;  // starting point
-    [UIView beginAnimations:@"earthquake" context:(__bridge void *)(itemView)];
-    [UIView setAnimationRepeatAutoreverses:YES]; // 如果不加这一句 整个动画感觉不连贯
-    [UIView setAnimationRepeatCount:5];
-    [UIView setAnimationDuration:0.04];
-    [UIView setAnimationDelegate:self];
-    [UIView setAnimationDidStopSelector:@selector(_earthquakeEnded:finished:context:)];
-    itemView.transform = rightQuake; // end here & auto-reverse
-    [UIView commitAnimations];
+- (void)errorPath {
+    self.showError = YES;
+    [self.collectionView reloadData];
+    self.gestrueLayer.strokeColor = self.errorColor.CGColor;
+    [self _earthquake:self];
+    dispatch_time_t delayTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.7 * NSEC_PER_SEC));
+    dispatch_after(delayTime, dispatch_get_main_queue(), ^{
+        [self reset];
+    });
 }
 
-- (void)_earthquakeEnded:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
-    if ([finished boolValue]) {
-        UIView* item = (__bridge UIView *)context;
-        item.transform = CGAffineTransformIdentity;
-    }
-}
-
-- (void)_panMethod:(UIPanGestureRecognizer *)pan {
+- (void)panMethod:(UIPanGestureRecognizer *)pan {
     CGPoint point = [pan locationInView:self.collectionView];
     switch (pan.state) {
         case UIGestureRecognizerStateBegan:
-            [self _gestureBegan];
+            [self reset];
             break;
         case UIGestureRecognizerStateChanged:
             [self _gestureChanged:point];
@@ -76,19 +53,35 @@
     }
 }
 
-//手势开始
-- (void)_gestureBegan {
-    [self refresh];
+#pragma mark - Private
+
+/// 水平晃动
+/// - Parameter itemView: 晃动View
+- (void)_earthquake:(UIView*)itemView {
+    CGFloat t = 4.0;
+    CGAffineTransform leftQuake  = CGAffineTransformTranslate(CGAffineTransformIdentity, t, 0);
+    CGAffineTransform rightQuake = CGAffineTransformTranslate(CGAffineTransformIdentity, -t, 0);
+    itemView.transform = leftQuake;
+    [UIView beginAnimations:@"earthquake" context:(__bridge void *)(itemView)];
+    [UIView setAnimationRepeatAutoreverses:YES];
+    [UIView setAnimationRepeatCount:5];
+    [UIView setAnimationDuration:0.04];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDidStopSelector:@selector(_earthquakeEnded:finished:context:)];
+    itemView.transform = rightQuake;
+    [UIView commitAnimations];
 }
 
-//手势变化
+- (void)_earthquakeEnded:(NSString *)animationID finished:(NSNumber *)finished context:(void *)context {
+    if ([finished boolValue]) {
+        UIView* item = (__bridge UIView *)context;
+        item.transform = CGAffineTransformIdentity;
+    }
+}
+
+/// 手势变化
 - (void)_gestureChanged:(CGPoint)point {
-    [self _updatePasswordIndexPathArr:point];
-    [self _updateGesturePath:point];
-}
-
-//更新路径上的indexPath
-- (void)_updatePasswordIndexPathArr:(CGPoint)point {
+    // 更新数组
     for (NSIndexPath *indexPath in self.collectionView.indexPathsForVisibleItems) {
         XMGesturePasswordCell *cell = (XMGesturePasswordCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
         if (CGRectContainsPoint(cell.frame, point)) {
@@ -98,9 +91,13 @@
             }
         }
     }
+    // 绘制路径
+    [self _configGesturePath];
+    [self.path addLineToPoint:point];
+    self.gestrueLayer.path = self.path.CGPath;
 }
 
-//绘制手势路径
+/// 绘制手势路径
 - (void)_configGesturePath {
     [self.path removeAllPoints];
     for (NSInteger i = 0; i < self.passwordIndexPathArr.count; i++) {
@@ -115,14 +112,7 @@
     self.gestrueLayer.path = self.path.CGPath;
 }
 
-//更新手势路径
-- (void)_updateGesturePath:(CGPoint)point {
-    [self _configGesturePath];
-    [self.path addLineToPoint:point];
-    self.gestrueLayer.path = self.path.CGPath;
-}
-
-//手势结束
+/// 手势结束
 - (void)_gestureEnded {
     //显示手势路径
     [self _configGesturePath];
@@ -130,14 +120,9 @@
     for (NSIndexPath *indexPath in self.passwordIndexPathArr) {
         password = [NSString stringWithFormat:@"%@%zd",password,indexPath.row];
     }
-    if ([self.delegate respondsToSelector:@selector(xmGestureResultPassword:)]) {
-        [self.delegate xmGestureResultPassword:password];
+    if ([self.delegate respondsToSelector:@selector(xmGesturePassword:result:)]) {
+        [self.delegate xmGesturePassword:self result:password];
     }
 }
-
-#pragma mark - Setter
-
-
-
 
 @end

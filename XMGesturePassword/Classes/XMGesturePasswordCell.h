@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XMGesturePasswordCell : UICollectionViewCell
 
+/// cell选中状态
+@property (nonatomic) BOOL xmSelected;
+
 /// 手指触摸时显示的图案
 @property (nonatomic, strong) UIView *centerBall;
 

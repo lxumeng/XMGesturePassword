@@ -2,20 +2,25 @@
 //  XMGesturePasswordView+BezierPlotter.h
 //  XMGesturePassword
 //
-//  Created by xixi on 2024/2/26.
+//  Created by lxumeng on 2024/2/26.
 //
 
 #import "XMGesturePasswordView.h"
-#import "XMGesturePasswordViewProtocol.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XMGesturePasswordView (BezierPlotter) <XMGesturePasswordViewProtocol>
+@interface XMGesturePasswordView (BezierPlotter)
 
+/// 手势方法
+/// - Parameter pan: 手势
+- (void)panMethod:(UIPanGestureRecognizer *)pan;
 
-- (void)_earthquake:(UIView*)itemView;
+/// 重置，清空所有手势
+- (void)resetView;
 
-- (void)_panMethod:(UIPanGestureRecognizer *)pan;
+/// 验证错误
+- (void)errorPath;
 
 @end
 

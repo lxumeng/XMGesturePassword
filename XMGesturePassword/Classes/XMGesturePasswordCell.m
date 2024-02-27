@@ -30,9 +30,10 @@ FOUNDATION_STATIC_INLINE CGColorRef XM_BORDER_COLOR(void) {
     return self;
 }
 
-- (void)setSelected:(BOOL)selected {
-    self.centerBall.hidden = !selected;
-    if (selected) {
+- (void)setXmSelected:(BOOL)xmSelected {
+    _xmSelected = xmSelected;
+    self.centerBall.hidden = !_xmSelected;
+    if (_xmSelected) {
         return;
     }
     self.layer.borderColor = XM_BORDER_COLOR();

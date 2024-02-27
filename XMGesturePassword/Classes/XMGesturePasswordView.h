@@ -6,32 +6,39 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XMGesturePasswordViewProtocol.h"
+
+@class XMGesturePasswordView;
 
 @protocol XMGesturePasswordViewDelegate <NSObject>
-
-- (void)xmGestureResultPassword:(NSString *)password;
+/// 密码结果回调
+/// - Parameter password: 密码
+- (void)xmGesturePassword:(XMGesturePasswordView *)passwordView result:(NSString *)password;
 
 @end
 
-@interface XMGesturePasswordView : UIView
+@interface XMGesturePasswordView : UIView 
 
 @property (nonatomic, weak) id<XMGesturePasswordViewDelegate> delegate;
-/// item背景色 默认浅灰色
-@property (nonatomic, strong) UIColor *itemBackGoundColor;
-/// item中间圆球的颜色 默认灰色
-@property (nonatomic, strong) UIColor *itemCenterBallColor;
-/// item中间圆球错误颜色 默认灰色
-@property (nonatomic, strong) UIColor *itemCenterBallErrorColor;
-/// 线条正常状态的颜色 默认灰色
-@property (nonatomic, strong) UIColor *lineNormalColor;
-/// 线条错误状态的颜色 默认红色
-@property (nonatomic, strong) UIColor *lineErrorColor;
-/// 连接线宽度
-@property (nonatomic, assign) NSInteger lineWidth;
 
-/// 重新输入
-- (void)refresh;
-/// 错误
+/// 圆圈直径,默认70
+@property (nonatomic) CGFloat diameter;
+
+/// 连接线宽度，默认20
+@property (nonatomic) NSInteger lineWidth;
+
+/// 正常连线颜色，默认灰色
+@property (nonatomic, strong) UIColor *normalColor;
+
+/// 错误连线颜色，默认红色
+@property (nonatomic, strong) UIColor *errorColor;
+
+/// 重置，清空所有手势
+- (void)reset;
+
+/// 展示错误
 - (void)showError;
 
 @end
+
+

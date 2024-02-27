@@ -10,15 +10,15 @@
 				<key>location-parameters</key>
 				<dict>
 					<key>EndingColumnNumber</key>
-					<string>0</string>
+					<string>53</string>
 					<key>EndingLineNumber</key>
 					<string>14</string>
 					<key>StartingColumnNumber</key>
-					<string>0</string>
+					<string>53</string>
 					<key>StartingLineNumber</key>
-					<string>13</string>
+					<string>14</string>
 					<key>Timestamp</key>
-					<string>730648016.495344</string>
+					<string>730709873.692867</string>
 				</dict>
 				<key>rebasable-url</key>
 				<dict>
@@ -34,16 +34,15 @@
 			<key>text-context</key>
 			<dict>
 				<key>focused</key>
-				<string>@implementation XMGesturePasswordView (BezierPlotter)
-</string>
+				<string></string>
 				<key>leading</key>
-				<string>#pragma clang diagnostic ignored "-Wprotocol"
+				<string>@end
 
-</string>
+@implementation XMGesturePasswordView (BezierPlotter)</string>
 				<key>trailing</key>
 				<string>
-//报错
-- (void)showError {
+
+#pragma mark - Public
 </string>
 			</dict>
 			<key>title</key>
